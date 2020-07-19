@@ -396,7 +396,7 @@ func TestShrugCommand(t *testing.T) {
 }
 
 func TestStatusCommands(t *testing.T) {
-	th := Setup(t).InitBasic()
+	th := Setup(t)
 	defer th.TearDown()
 
 	commandAndTest(t, th, "away")

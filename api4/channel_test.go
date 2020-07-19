@@ -2085,7 +2085,7 @@ func TestGetChannelUnread(t *testing.T) {
 }
 
 func TestGetChannelStats(t *testing.T) {
-	th := Setup(t).InitBasic()
+	th := Setup(t)
 	defer th.TearDown()
 	Client := th.Client
 	channel := th.CreatePrivateChannel()
@@ -3180,7 +3180,7 @@ func TestAutocompleteChannelsForSearchGuestUsers(t *testing.T) {
 }
 
 func TestUpdateChannelScheme(t *testing.T) {
-	th := Setup(t).InitBasic()
+	th := Setup(t)
 	defer th.TearDown()
 
 	th.App.Srv().SetLicense(model.NewTestLicense(""))
